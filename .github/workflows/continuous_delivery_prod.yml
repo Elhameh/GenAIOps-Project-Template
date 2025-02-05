@@ -86,7 +86,7 @@ jobs:
       - name: Install Azure Developer CLI 
         uses: Azure/setup-azd@v1.0.0
 
-      - name: azd auth Login
+      - name: azd Login
         shell: bash  
         run: |
             info=$(echo $AZURE_CREDENTIALS | jq -r '.')
