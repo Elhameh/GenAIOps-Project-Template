@@ -45,7 +45,9 @@ def main():
 
     details = pf.get_details(eval_run)
 
+    print("############################################################################################################")
     print(details.head(10))
+    print("############################################################################################################")
 
     details = pf.get_details(eval_run)
     details.to_excel("prompty-answer-score-eval.xlsx", index=False)
